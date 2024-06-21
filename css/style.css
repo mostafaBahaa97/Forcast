@@ -1,0 +1,119 @@
+/* header */
+body{
+    background-color: #1e202b;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 1s;
+
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #009ad8;
+    border: 2px solid #009ad8 ;
+}
+button i{
+    color: white;
+}
+
+nav button{
+    color: white;
+}
+nav button:hover{
+    color: #009ad8;
+    padding: 10px;
+    border: 2px solid #009ad8 ;
+}
+/* header */
+/* main */
+#home{
+    background-image: url(../assets/banner.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+}
+input{
+    border: none;
+    background-color: #1e202b;
+    color: white;
+}
+input:focus-visible{
+    outline: none;
+}
+#input{
+    position: relative;
+}
+#input button{
+    position: absolute;
+    right: 20px;
+    top: 55px;
+}
+#input2{
+    position: relative;
+}
+#input2 button{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+.card-body h5{
+    font-size: 90px;
+    font-weight: 700;
+    
+}
+#card1{
+    border: 10px black;
+    border-top-left-radius: 50%;
+}
+.tempDay{
+    font-size: 60px;
+    font-weight: bold;
+}
+.text-color{
+    color: #BFC1C8;
+}
+.w-40{
+    width: 40%;
+}
+.bg-burble{
+    background-color: #2D303D;
+}
+.bg-burble-dark{
+    background-color: #222530;
+}
+.card13-body{
+    background-color: #323544;
+}
+.card2-body{
+    background-color: #262936;
+}
+.borderhover:hover{
+    border: #009ad8 2px;
+}
+.form-control:focus{
+    background-color: #262936;
+}
+/* main */
+/* footer */
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(30,32,43);
+    color: rgb(13,110,253);
+    border-radius: 50%;
+    transition: all 1s;
+}
+.icon:hover{
+    background-color: #009ad8;
+    color: white;
+}
+/* footer */

@@ -1,0 +1,195 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast by Bahaa</title>
+    <link rel="icon" href="assets/Forecasting Revenue.webp">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container py-3 ">
+                    <div class="logo d-flex justify-content-center align-items-center">
+                        <a class="navbar-brand" href=""><img src="assets/logo@2x.png" class="" alt="">
+                        </a>
+                        <div class="logos">
+                            <p class="text-white mb-0">Weather</p>
+                            <span class="text-white">tagline goes here</span>
+                        </div>
+                    </div>
+
+
+                    <button class="navbar-toggler text-center " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item me-3">
+                                <a class="nav-link px-4" id="head" href="#">Home</a>
+                            </li>
+                            <li class="nav-item me-3 ">
+                                <a class="nav-link px-4" href="#">News</a>
+                            </li>
+                            <li class="nav-item me-3 ">
+                                <a class="nav-link px-4" href="#">Live cameras</a>
+                            </li>
+                            <li class="nav-item me-3 ">
+                                <a class="nav-link px-4" href="#">Photos</a>
+                            </li>
+                            <li class="nav-item me-3 ">
+                                <a id="contact" class="nav-link px-4" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section id="home" class="main" >
+                <div id="input" class="container w-75">
+                    <input id="cityInput" type="text" placeholder="Find Your location ..." class="ps-3 w-100 rounded-5 p-3 my-5 ">
+                    <p id="location" class=" position-relative text-white d-none" style="left: 20 ; bottom: 90 ;" href="home"><a class="text-decoration-none text-white" href="">Home</a> > Contact</p>
+                    <button id="find" class="btn bg-primary py-2 px-5 rounded-5 text-white">Find</button>
+                </div>
+                <div id="cards" class="row cards d-flex flex-wrap mb-5 w-75 m-auto border-2 rounded-2">
+                    
+                    <div id="card1" class=" col-lg-4 col-md-12 col-sm-12 ">
+                        <div class="card-header ps-2 bg-burble text-light d-flex justify-content-between">
+                            <span id="day" class="text-color p-2"></span>
+                            <span id="nDay" class="text-color p-2"></span>
+                        </div>
+                        <div class="card-body ps-4 pt-3 card13-body">
+                            <div class="name card-title text-color fs-6" id="cityName">Cairo</div>
+                            <div class="num d-flex">
+                                <span id="tempDay" class="card-subtitle text-white tempDay">32</span>
+                                <span class="text-white tempDay"><sup class="fs-1 fw-bold">o</sup>C</span>
+                            </div>
+                            <div class="weather-img">
+                                <a class="d-block" href="https://www.weatherapi.com/" title="Free Weather API"><img id="day1-image" src='./assets/113 (2).webp' alt="Weather data by WeatherAPI.com" border="0"></a>
+                            </div>
+                            <p id="sunny" class="card-link py-2 text-primary">clear</p>
+                            <div class="weather-logos  py-3 d-flex">
+                                <div class="temp">
+                                    <img class="me-1" src="assets/icon-umberella.png"  alt="">
+                                    <span class="me-2 text-white"><span id="avghumidity" >20</span>%</span>
+                                </div>
+                                <div class="wind">
+                                    <img class="me-1" src="assets/icon-wind.png"  alt="">
+                                    <span class="me-2 text-white"><span id="wind">18</span>km/h</span>
+                                </div>
+                                <div class="compass">
+                                    <img class="me-1" src="assets/icon-compass.png" alt="">
+                                    <span class="me-2 text-white">east</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card2" class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="card-header ps-2 bg-burble-dark text-light d-flex justify-content-center">
+                            <span id="date2" class="text-color p-2"></span>
+                        </div>
+                        <div class="card-body card2-body ps-2 card13-body d-flex flex-column align-items-center">
+                             <div class="weather-img my-3">
+                                <a class="d-block" href="https://www.weatherapi.com/" title="Free Weather API"><img id="day2-image" src='./assets/353.webp' alt="Weather data by WeatherAPI.com" border="0"></a>
+                            </div>
+                            
+                            <div class="weather-logos  pb-5 text-center  ">
+                                <div class="temp fs-1 fw-bold ">
+                                    <span class="text-white"><span id="minTemp2">35</span><sup>o</sup>C</span>
+                                </div>
+                                <div class="wind ">
+                                    <span class="text-white"><span id="maxTemp2">22</span><sup>o</sup>C</span>
+                                </div>
+                            
+                                <p id="sunny2" class="card-link py-2 mt-4 text-primary">clear</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card3" class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="card-header ps-2 bg-burble text-light d-flex justify-content-center">
+                            <span id="date3" class="text-color p-2"></span>
+                        </div>
+                        <div class="card-body ps-2 card13-body d-flex flex-column align-items-center">
+                            <div class="weather-img my-3">
+                                <a class="d-block" href="https://www.weatherapi.com/" title="Free Weather API"><img id="day3-image" src='./assets/302.webp' alt="Weather data by WeatherAPI.com" border="0"></a>
+                            </div>
+                            
+                            <div class="weather-logos  pb-5 text-center  ">
+                                <div class="temp fs-1 fw-bold ">
+                                    <span class="text-white"><span id="minTemp3">27</span><sup>o</sup>C</span>
+                                </div>
+                                <div class="wind ">
+                                    <span class="text-white"><span id="maxTemp3">25</span><sup>o</sup>C</span>
+                                </div>
+                            
+                                <p id="sunny3" class="card-link py-2 mt-4 text-primary">clear</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+
+                <div id="sub" class="row d-none g-4">
+                    <div class="col-lg-4 offset-lg-1 bg-burble rounded-3 pb-4">
+                        <div class="container ">
+                            <div class="frame ">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3502.115254770206!2d29.990493591096126!3d31.23630574568856!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1712091175426!5m2!1sen!2sus"
+                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-3 pt-4" style="width: 100%; height: 300px;"></iframe>
+                            </div>
+                            <p class="text-white mt-4"><i class="fa-solid fa-location-dot me-2 text-primary"></i>5 street ibn el qayem elsoyuf shamaaa</p>
+                                <span class="text-white "> <i class="fa-solid fa-phone me-2 text-primary"></i> +201007809902</span>
+                                <span class="text-white  ms-5 "><i class="fa-solid fa-envelope me-2 text-primary"></i>Mostafabahaa899@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <h3 class="text-white">Contact us</h3>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+                        <div class="inputs d-flex flex-wrap">
+                            <input type="text" placeholder="Your Name ..." class=" borderhover border-2 form-control  py-3 w-40 ms-4 me-4 rounded-5 bg-burble-dark mb-2 ">
+                            <input type="text" placeholder="Email Address ..." class=" borderhover border-2 form-control  py-3 w-40 rounded-5 bg-burble-dark mb-2">
+                            <input type="text" placeholder="Company Name ..." class=" borderhover border-2 form-control  py-3 w-40 ms-4 me-4 rounded-5 bg-burble-dark">
+                            <input type="text" placeholder="Website ..." class=" borderhover border-2 form-control  py-3 w-40 rounded-5 bg-burble-dark">
+                            <textarea placeholder="Message ..." class=" w-75 bg-burble-dark form-check ms-5 mt-3 rounded-4" style="min-height: 150px;"></textarea>
+                            <div class="submit w-100 mt-3">
+                                <button class="btn btn-info">Submit</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="mt-5 p-5 card2-body">
+                    <div class="row">
+                        <div class="row d-flex flex-wrap justify-content-center ">
+                            <div id="input2" class="">
+                                <input type="text" class="ps-3 w-100 rounded-5 p-3 my-4" placeholder="Enter Your Email To Subscribe...">
+                                <button class="btn bg-primary py-2 px-5 rounded-5 text-white">Subscribe</button>
+                            </div>
+                            <div class="logos w-50 p-4 d-flex justify-content-center ms-sm-2">
+                                <i class="icon me-2 p-4 fs-5 fa-brands fa-facebook-f"></i>
+                                <i class="icon me-2 p-4 fs-5 fa-brands fa-twitter"></i>
+                                <i class="icon me-2 p-4 fs-5 fa-brands fa-google-plus-g"></i>
+                                <i class="icon me-2 p-4 fs-5 fa-brands fa-pinterest"></i>
+                            </div>
+                            <p class="text-white text-center">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+        </div>
+        
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

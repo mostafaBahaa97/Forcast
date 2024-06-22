@@ -4,6 +4,8 @@
 
 var x = new Date();
 var day = x.toLocaleDateString('en',{dateStyle:'long'})
+console.log(day);
+// var day = x.toLocaleDateString('en',{dateStyle:'long'})
 var weekday = x.toLocaleDateString('en',{weekday:'long'})
 
 
@@ -102,22 +104,6 @@ contact.addEventListener('click',function () {
     cards.classList.add('d-none')
     sub.classList.toggle('d-none')
     console.log('hi')
-})
-
-
-
-
-
-head.addEventListener('click',function () {
-    // home.setAttribute('style','background-image: url(../assets/banner.png);')
-    // // cityInput.setAttribute('style','background-color: #262936;')
-    // cityInput.setAttribute('placeholder','Find Your Location')
-    // findButton.classList.remove('d-none')
-    // loca.classList.toggle('d-none')
-    // cards.classList.toggle('d-none')
-    // sub.classList.toggle('d-none')
-    // console.log('hi')
-    
 })
 
 
